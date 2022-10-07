@@ -1,0 +1,298 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.btn{
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: #000000;
+    border-radius: 30px;
+
+    font-size: 18px;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #323232;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+
+/* Header */
+
+.header {
+    padding-top: 46px;
+    background-color: #000000;
+}
+.contact{
+    background-color: rgb(4, 4, 4);
+}
+.history{
+    padding-top: 46px;
+    background-color: #fffefe;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 76px;
+}
+
+.logo {
+    position: relative;
+    padding: 0 12px 3px 0;
+
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    color: rgb(254, 254, 254);
+}
+
+/* Nav */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-button {
+    display: none;
+    z-index: 99;
+    background-color: #fff;
+
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+.history{
+    color: #000;
+}
+
+.nav-link.active {
+    color: #606060;
+}
+
+/* Header content */
+
+.header-row {
+    display: flex;justify-content: space-between;
+    column-gap: 30px;
+}
+
+.header-content {
+    margin-top: 45px;
+    max-width: 600px;
+}
+
+.header-heading {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #F1F1F1;
+}
+.header-img{
+    position: relative;
+    top: -80px;
+}
+.header-content p {
+    line-height: 2;
+    color: #585858;
+}
+
+.fond{
+    font-size: 50px;
+    font-weight: 700x;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Service */
+
+.services {
+    padding: 90px 0;
+}
+.partners{
+    background-color: #e6e6e6a9;
+}
+
+.services-row {
+    display: flex;
+    column-gap: 21px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 0;
+    min-width: 290px;
+}
+.card__service{
+    flex: 1 1 0;
+    min-width: 270px;
+}
+.card__serv{
+    flex: 1 1 0;
+    min-width: 250px;
+}
+.service__contact{
+    flex: 1 1 0;
+    min-width: 250px;
+}
+.card__gratitude{
+    flex: 1 1 0;
+    min-width: 250px;
+}
+
+.service-card-img {
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+}
+.card__history{
+    margin-bottom: 30px;
+    width: 500px;
+    height: 300px;
+}
+.card__gratitude{
+    margin-bottom: 5px;
+    width:335px;
+    height: 250px;
+}
+.img__rgatitude{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    width:350px;
+    height: 500px;
+}
+
+.service-card-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 70px 0;
+    background-color: #F1F1F1;
+}
+
+.portfolio__partners{
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.portfolio-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+}
+
+.project + .project  {
+    margin-top: 90px;
+}
+
+.project-img {
+    margin-bottom: 40px;
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-title a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.contacts {
+    padding: 90px 0 40px 0;
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    margin: 0 auto 40px;
+    max-width: 480px;
+    font-size: 18px;
+}
+
+.contacts-content p + p {
+    margin-top: 1em;
+}
+
+.contacts-button {
+    margin-bottom: 80px;
+}
+
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+
+.contacts-footer {
+    color: #828282;
+}
+.contact{
+    color: #000;
+    font-size: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+/* String */
